@@ -9,84 +9,94 @@
 </head>
 <body>
     <div class=" [ title ] ">
-        <h1>Welcome to Game of Thrones - Board Game</h1>
-        <h1>Choose your players</h1>
+        <img src="images/game-of-thrones.png" alt="">
+        <!-- <h1>Welcome to Game of Thrones - Board Game</h1>
+        <h1>Choose your players</h1> -->
     </div>
+
+    <div class=" [ selectedPlayers ] ">
+        <div id="selectedPlayer1"></div>
+        <div id="selectedPlayer2"></div>
+        <div><button class="[ selectedPlayers__reset ]" onclick="resetPlayerSelection()">Reset Player Selection</button></div>
+    </div>
+    
     <div class=" [ players ] ">
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Jon Snow">
             <p>Jon Snow</p>
             <div id="player_Jon"></div>
             <button class="[ players__container--read ]" onclick="viewMore('583', 'Jon')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Jon Snow')">Select Jon</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Daenerys Targaryen">
             <p>Daenerys Targaryen</p>
             <div id="player_Daenerys"></div>
             <button class="[ players__container--read ]" onclick="viewMore('272', 'Daenerys')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Daenerys Targaryen')">Select Daenerys</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Catelyn Stark">
             <p>Catelyn Stark</p>
             <div id="player_Catelyn"></div>
             <button class="[ players__container--read ]" onclick="viewMore('232', 'Catelyn')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Catelyn Stark')">Select Catelyn</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Tyrion Lannister">
             <p>Tyrion "Mini" Lannister</p>
             <div id="player_Tyrion"></div>
             <button class="[ players__container--read ]" onclick="viewMore('1052', 'Tyrion')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Tyrion Lannister')">Select Tyrion</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Sandor - The Hound - Clegane">
             <p>Sandor "The Hound" Clegane</p>
             <div id="player_Sandor"></div>
             <button class="[ players__container--read ]" onclick="viewMore('955', 'Sandor')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Sandor Clegane')">Select Sandor</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Joffrey Baratheon">
             <p>Joffrey Baratheon</p>
             <div id="player_Joffrey"></div>
             <button class="[ players__container--read ]" onclick="viewMore('565', 'Joffrey')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Joffrey Baratheon')">Select Joffrey</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Petyr - Littlefinger - Baelish">
             <p>Petyr "Littlefinger" Baelish</p>
             <div id="player_Petyr"></div>
             <button class="[ players__container--read ]" onclick="viewMore('823', 'Petyr')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Petyr Baelish')">Select Petyr</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Cersei Lannister">
             <p>Cersei Lannister</p>
             <div id="player_Cersei"></div>
             <button class="[ players__container--read ]" onclick="viewMore('238', 'Cersei')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Cersei Lannister')">Select Cersei</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Melisandre">
             <p>Melisandre</p>
             <div id="player_Melisandre"></div>
             <button class="[ players__container--read ]" onclick="viewMore('743', 'Melisandre')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Melisandre')">Select Melisandre</button>
         </div>
         <div class=" [ players__container ] ">
             <img src="https://via.placeholder.com/200" alt="Margaery Tyrell">
             <p>Margaery Tyrell</p>
             <div id="player_Margaery"></div>
             <button class="[ players__container--read ]" onclick="viewMore('16', 'Margaery')">Read More</button>
-            <button class="[ players__container--read ]">Select Player</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Margaery Tyrell')">Select Margaery</button>
         </div>
-
 
     </div>
 
+    
+
     <script src="/js/api.js"></script>
+    <script src="js/storage.js"></script>
 </body>
 </html>
