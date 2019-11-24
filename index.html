@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game of Thrones - Board Game</title>
+    <script src="https://kit.fontawesome.com/da3204a637.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
         <h1>Choose your players</h1> -->
     </div>
 
-    <div class=" [ selectedPlayers ] ">
+    <div class=" [ selectedPlayers ] " id="hmmmmm">
         <div id="selectedPlayer1"></div>
         <div id="selectedPlayer2"></div>
         <div><button class="[ selectedPlayers__reset ]" onclick="resetPlayerSelection()">Reset Player Selection</button></div>
@@ -22,74 +23,74 @@
     
     <div class=" [ players ] ">
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Jon Snow">
+            <img src="https://via.placeholder.com/150" alt="Jon Snow">
             <p>Jon Snow</p>
             <div id="player_Jon"></div>
             <button class="[ players__container--read ]" onclick="viewMore('583', 'Jon')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Jon Snow')">Select Jon</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Jon')">Select Jon</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Daenerys Targaryen">
+            <img src="https://via.placeholder.com/150" alt="Daenerys Targaryen">
             <p>Daenerys Targaryen</p>
             <div id="player_Daenerys"></div>
             <button class="[ players__container--read ]" onclick="viewMore('272', 'Daenerys')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Daenerys Targaryen')">Select Daenerys</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Daenerys')">Select Daenerys</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Catelyn Stark">
+            <img src="https://via.placeholder.com/150" alt="Catelyn Stark">
             <p>Catelyn Stark</p>
             <div id="player_Catelyn"></div>
             <button class="[ players__container--read ]" onclick="viewMore('232', 'Catelyn')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Catelyn Stark')">Select Catelyn</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Catelyn')">Select Catelyn</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Tyrion Lannister">
+            <img src="https://via.placeholder.com/150" alt="Tyrion Lannister">
             <p>Tyrion "Mini" Lannister</p>
             <div id="player_Tyrion"></div>
             <button class="[ players__container--read ]" onclick="viewMore('1052', 'Tyrion')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Tyrion Lannister')">Select Tyrion</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Tyrion')">Select Tyrion</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Sandor - The Hound - Clegane">
+            <img src="https://via.placeholder.com/150" alt="Sandor - The Hound - Clegane">
             <p>Sandor "The Hound" Clegane</p>
             <div id="player_Sandor"></div>
             <button class="[ players__container--read ]" onclick="viewMore('955', 'Sandor')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Sandor Clegane')">Select Sandor</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Sandor')">Select Sandor</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Joffrey Baratheon">
+            <img src="https://via.placeholder.com/150" alt="Joffrey Baratheon">
             <p>Joffrey Baratheon</p>
             <div id="player_Joffrey"></div>
             <button class="[ players__container--read ]" onclick="viewMore('565', 'Joffrey')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Joffrey Baratheon')">Select Joffrey</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Joffrey')">Select Joffrey</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Petyr - Littlefinger - Baelish">
+            <img src="https://via.placeholder.com/150" alt="Petyr - Littlefinger - Baelish">
             <p>Petyr "Littlefinger" Baelish</p>
             <div id="player_Petyr"></div>
             <button class="[ players__container--read ]" onclick="viewMore('823', 'Petyr')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Petyr Baelish')">Select Petyr</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Petyr')">Select Petyr</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Cersei Lannister">
+            <img src="https://via.placeholder.com/150" alt="Cersei Lannister">
             <p>Cersei Lannister</p>
             <div id="player_Cersei"></div>
             <button class="[ players__container--read ]" onclick="viewMore('238', 'Cersei')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Cersei Lannister')">Select Cersei</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Cersei')">Select Cersei</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Melisandre">
+            <img src="https://via.placeholder.com/150" alt="Melisandre">
             <p>Melisandre</p>
             <div id="player_Melisandre"></div>
             <button class="[ players__container--read ]" onclick="viewMore('743', 'Melisandre')">Read More</button>
             <button class="[ players__container--read ]" onclick="localStoragePlayers('Melisandre')">Select Melisandre</button>
         </div>
         <div class=" [ players__container ] ">
-            <img src="https://via.placeholder.com/200" alt="Margaery Tyrell">
+            <img src="https://via.placeholder.com/150" alt="Margaery Tyrell">
             <p>Margaery Tyrell</p>
             <div id="player_Margaery"></div>
             <button class="[ players__container--read ]" onclick="viewMore('16', 'Margaery')">Read More</button>
-            <button class="[ players__container--read ]" onclick="localStoragePlayers('Margaery Tyrell')">Select Margaery</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Margaery')">Select Margaery</button>
         </div>
 
     </div>

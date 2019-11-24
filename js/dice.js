@@ -1,8 +1,21 @@
+function rollDice() {
 
-let min = 1
-let max = 6
+    let random = Math.floor(Math.random() * (6 - 1 + 1)) + 1
+    document.getElementById('dice').innerHTML = ''
+    return document.getElementById('dice').innerHTML += `
+    <p>${random}</p>
+    `   
+}
 
-let random = Math.floor(Math.random() * (max - min + 1)) + min
 
 
-console.log(random)
+if (playerOne.isTurn === true) {
+    playerOne.tilePosition + random
+} else {
+    playerTwo.tilePosition + random
+}
+
+
+
+
+

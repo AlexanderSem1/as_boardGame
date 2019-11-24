@@ -6,19 +6,125 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Board Game - Good luck</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/da3204a637.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class=" [ title ] ">
-        <img src="images/game-of-thrones.png" alt="">
-        <h1>Welcome to Game of Thrones - Board Game</h1>
-        <h1>Choose your players</h1>
+        <img class=" [ title__logo ] " src="images/game-of-thrones.png" alt="" width="200px">
+        <!-- <h1>Welcome to Game of Thrones - Board Game</h1>
+        <h1>Choose your players</h1> -->
+        
     </div>
 
-    <div class=" [ selectedPlayers ] ">
-        <div id="selectedPlayer1"></div>
-        <div id="selectedPlayer2"></div>
+
+    <div class=" [ bgplayers ] ">
+        <div class=" [ bgplayers__board ] " id="selectedPlayer1"></div>
+        <div class=" [ bgplayers__board ] " ><button class=" [ bgplayers__board--btn ] " onclick="rollDice()" >Roll the dice <p id="dice"></p></button></div>
+        <div class=" [ bgplayers__board ] " id="selectedPlayer2"></div>
         </div>
     </div>
 
+    <div ></div>
+
+    <div class=" [ boardgame ] ">
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="tile1">1</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="two">2</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="three">3</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="four">4</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="five">5</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="six">6</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="seven">7</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="eight">8</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="nine">9</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="ten">10</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="eleven">11</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twelve">12</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="thirteen">13</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="fourteen">14</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="fifteen">15</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="sixteen">16</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="seventeen">17</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="eighteen">18</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="nineteen">19</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twenty">20</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyOne">21</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyTwo">22</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyThree">23</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyFour">24</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyFive">25</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentySix">26</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentySeven">27</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyEight">28</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="twentyNine">29</p>
+        </div>
+        <div class=" [ boardgame__tile ] ">
+            <p class=" [ boardgame__tile--number ] " id="thirty">30</p>
+        </div>
+    </div>
+
+
+
+    <a class=" [ fas fa-arrow-left ] " href="index.html">&nbsp;&nbsp; Back to Home</a>
+
+    <script src="js/players.js"></script>
+    <script src="js/dice.js"></script>
+    <script src="js/insertAndMovePlayer.js"></script>
 </body>
 </html>
