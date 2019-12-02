@@ -33,7 +33,7 @@ function localStoragePlayers(name) {
 function resetPlayerSelection() {
    
     localStorage.clear();
-    // document.getElementById('hmmmmm').innerHTML = ''
+    document.getElementById('hmmmmm').innerHTML = ''
 }
 
 

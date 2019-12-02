@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Game of Thrones;
+  src: url(fonts/Game-of-thrones.ttf);
+}
 body {
   box-sizing: border-box;
   background-color: #000000e8;
@@ -115,6 +119,10 @@ body {
 .boardgame__tile--number {
   font-size: 1.2vw;
 }
+.boardgame__tile img {
+  width: 40px;
+  margin-left: 20%;
+}
 
 a {
   text-decoration: none;
@@ -124,9 +132,17 @@ a {
 }
 
 #dice {
-  padding: 10px;
   font-size: 1.5vw;
+  min-height: 80px;
   border: 2px solid #ffffff;
+}
+
+.fa-arrow-left {
+  font-family: GameOfThrones;
+}
+
+#turnsPlayer1, #turnsPlayer2 {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

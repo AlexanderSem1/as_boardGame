@@ -18,9 +18,14 @@
 
 
     <div class=" [ bgplayers ] ">
-        <div class=" [ bgplayers__board ] " id="selectedPlayer1"></div>
-        <div class=" [ bgplayers__board ] " ><button class=" [ bgplayers__board--btn ] " onclick="rollDice()" >Roll the dice <p id="dice"></p></button></div>
-        <div class=" [ bgplayers__board ] " id="selectedPlayer2"></div>
+        <div class=" [ bgplayers__board ] " id="selectedPlayer1">
+            <div class=" [ bgplayers__truns ] " id="turnsPlayer1">Your Turn!</div>
+        </div>
+       
+        <div class=" [ bgplayers__board ] " ><button class=" [ bgplayers__board--btn ] " onclick="movePlayerAndRollDice()" >Roll the dice <p id="dice"></p></button></div>
+        <div class=" [ bgplayers__board ] " id="selectedPlayer2">
+            <!-- <div class=" [ bgplayers__truns ] " id="turnsPlayer2">Your Turn!</div> -->
+        </div>
         </div>
     </div>
 
@@ -31,91 +36,91 @@
             <p class=" [ boardgame__tile--number ] " id="tile1">1</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="two">2</p>
+            <p class=" [ boardgame__tile--number ] " id="tile2">2</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="three">3</p>
+            <p class=" [ boardgame__tile--number ] " id="tile3">3</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="four">4</p>
+            <p class=" [ boardgame__tile--number ] " id="tile4">4</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="five">5</p>
+            <p class=" [ boardgame__tile--number ] " id="tile5">5</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="six">6</p>
+            <p class=" [ boardgame__tile--number ] " id="tile6">6</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="seven">7</p>
+            <p class=" [ boardgame__tile--number ] " id="tile7">7</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="eight">8</p>
+            <p class=" [ boardgame__tile--number ] " id="tile8">8</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="nine">9</p>
+            <p class=" [ boardgame__tile--number ] " id="tile9">9</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="ten">10</p>
+            <p class=" [ boardgame__tile--number ] " id="tile10">10</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="eleven">11</p>
+            <p class=" [ boardgame__tile--number ] " id="tile11">11</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twelve">12</p>
+            <p class=" [ boardgame__tile--number ] " id="tile12">12</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="thirteen">13</p>
+            <p class=" [ boardgame__tile--number ] " id="tile13">13</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="fourteen">14</p>
+            <p class=" [ boardgame__tile--number ] " id="tile14">14</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="fifteen">15</p>
+            <p class=" [ boardgame__tile--number ] " id="tile15">15</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="sixteen">16</p>
+            <p class=" [ boardgame__tile--number ] " id="tile16">16</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="seventeen">17</p>
+            <p class=" [ boardgame__tile--number ] " id="tile17">17</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="eighteen">18</p>
+            <p class=" [ boardgame__tile--number ] " id="tile18">18</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="nineteen">19</p>
+            <p class=" [ boardgame__tile--number ] " id="tile19">19</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twenty">20</p>
+            <p class=" [ boardgame__tile--number ] " id="tile20">20</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyOne">21</p>
+            <p class=" [ boardgame__tile--number ] " id="tile21">21</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyTwo">22</p>
+            <p class=" [ boardgame__tile--number ] " id="tile22">22</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyThree">23</p>
+            <p class=" [ boardgame__tile--number ] " id="tile23">23</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyFour">24</p>
+            <p class=" [ boardgame__tile--number ] " id="tile24">24</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyFive">25</p>
+            <p class=" [ boardgame__tile--number ] " id="tile25">25</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentySix">26</p>
+            <p class=" [ boardgame__tile--number ] " id="tile26">26</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentySeven">27</p>
+            <p class=" [ boardgame__tile--number ] " id="tile27">27</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyEight">28</p>
+            <p class=" [ boardgame__tile--number ] " id="tile28">28</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="twentyNine">29</p>
+            <p class=" [ boardgame__tile--number ] " id="tile29">29</p>
         </div>
         <div class=" [ boardgame__tile ] ">
-            <p class=" [ boardgame__tile--number ] " id="thirty">30</p>
+            <p class=" [ boardgame__tile--number ] " id="tile30">30</p>
         </div>
     </div>
 
