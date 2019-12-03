@@ -13,8 +13,6 @@ function createPlayerToken() {
     <p>${localStorage.getItem('playerTwo')}</p>
     <img src="${playerTwo.icon}">
     `
-    document.getElementById('tile1').innerHTML += `<img src=${playerOne.icon}>`
-    document.getElementById('tile1').innerHTML += `<img src=${playerTwo.icon}>`
 }
 
 createPlayerToken()

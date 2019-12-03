@@ -37,6 +37,12 @@
         }
     }
 }
+#tile0{
+    width: 100%;
+    display: none;
+}
+
+
 
 
 a{
@@ -46,13 +52,13 @@ a{
     font-size: 1.1vw;
 }
 
-#dice{
-    // padding: 10px; 
-    font-size: 1.5vw; 
-    min-height: 80px;
-    border:
-    2px solid $bg-white;
-}
+// #dice{
+//     // padding: 10px; 
+//     font-size: 1.5vw; 
+//     min-height: 80px;
+//     border:
+//     2px solid $bg-white;
+// }
 
 .fa-arrow-left{
     font-family: GameOfThrones;
@@ -60,4 +66,20 @@ a{
 
 #turnsPlayer1, #turnsPlayer2{
     display: none;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    border-bottom: 1px solid $bg-yellow;
+    border-top: 1px solid $bg-yellow;
+    text-align: center;
+}
+
+.modal-content{
+    background-color: $bg-yellow;
+    align-content: center;
+}
+
+.modal-header{
+    align-content: center;
+    text-align: center;
 }
