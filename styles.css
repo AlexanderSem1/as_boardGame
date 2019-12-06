@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Game of Thrones;
+  font-family: "GameOfThrones";
   src: url(fonts/Game-of-thrones.ttf);
 }
 body {
@@ -16,11 +16,14 @@ body {
   margin: 4%;
   text-align: center;
 }
-.title img {
-  width: 500px;
+.title__header {
+  font-family: "GameOfThrones";
+  font-size: 3em;
 }
-.title__logo {
-  margin-bottom: 5px;
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .selectedPlayers {
@@ -66,6 +69,9 @@ body {
 .players__container {
   padding: 0px;
   text-align: center;
+}
+.players__container img {
+  max-height: 220px;
 }
 .players__container--read {
   padding: 8px 20px;
@@ -124,11 +130,6 @@ body {
   margin-left: 20%;
 }
 
-#tile0 {
-  width: 100%;
-  display: none;
-}
-
 a {
   text-decoration: none;
   padding: 40px 0 20px 0;
@@ -144,20 +145,17 @@ a {
   display: none;
 }
 
-.modal-header, .modal-body, .modal-footer {
-  border-bottom: 1px solid #8E793E;
-  border-top: 1px solid #8E793E;
-  text-align: center;
+#tile0 {
+  display: none;
 }
 
 .modal-content {
   background-color: #8E793E;
   align-content: center;
 }
-
-.modal-header {
-  align-content: center;
-  text-align: center;
+.modal-header, .modal-body, .modal-footer {
+  border-bottom: 1px solid #8E793E;
+  border-top: 1px solid #8E793E;
 }
 
 /*# sourceMappingURL=styles.css.map */

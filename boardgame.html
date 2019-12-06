@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class=" [ title ] ">
-        <img class=" [ title__logo ] " src="images/game-of-thrones.png" alt="" width="200px">
+        <h1 class=" [ title__header ] ">Game of The Titans - Board Game</h1>
+        <!-- <img class=" [ title__logo ] " src="images/game-of-thrones.png" alt="" width="200px"> -->
         <!-- <h1>Welcome to Game of Thrones - Board Game</h1>
         <h1>Choose your players</h1> -->
         
@@ -23,7 +24,10 @@
             <div class=" [ bgplayers__truns ] " id="turnsPlayer1">Your Turn!</div>
         </div>
        
-        <div class=" [ bgplayers__board ] " ><button class=" [ bgplayers__board--btn ] " onclick="movePlayerAndRollDice()" >Roll the dice <p id="dice"></p></button></div>
+        <div class=" [ bgplayers__board ] " >
+            <button class=" [ bgplayers__board--btn ] " onclick="movePlayerAndRollDice()" >Roll the dice</button>
+            <p id="dice"></p>
+        </div>
         <div class=" [ bgplayers__board ] " id="selectedPlayer2">
             <!-- <div class=" [ bgplayers__truns ] " id="turnsPlayer2">Your Turn!</div> -->
         </div>
@@ -125,29 +129,38 @@
         </div>
     </div>
 
+    <!-- Hidden Div to put the staring posiion of the tiles -->
     <div><p id="tile0">0</p></div>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-    </button>
     
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">You are lucky!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <!-- Modal BoardGame Extra Dice Roll -->
+    <div class=" [ modal fade ] " id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        <div class=" [ modal-dialog modal-dialog-centered ] " role="document">
+            <div class=" [ modal-content ] ">
+                <div class=" [ modal-header ] ">
+                    <h5 class=" [ modal-title ] " id="ModalLongTitle">You are lucky!</h5>
+                    <button type="button" class="[ close ] " data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class=" [ modal-body ] ">
                     You rolled 6, you get to do it again! 
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="[ modal-footer ]">
+                    <button type="button" class=" [ btn btn-secondary ]" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal BoardGame Extra Dice Roll -->
+    <div class=" [ modal fade ] " id="trapModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+        aria-hidden="true">
+        <div class=" [ modal-dialog modal-dialog-centered ] " role="document">
+            <div class=" [ modal-content ] ">
+                <div class=" [ modal-body ] " id="trapModalMessage"></div>
+                <div class="[ modal-footer ]">
+                    <button type="button" class=" [ btn btn-secondary ]" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -157,8 +170,10 @@
 
     <a class=" [ fas fa-arrow-left ] " href="index.html">&nbsp;&nbsp; Back to Home</a>
 
-    <script src="js/players.js"></script>
+    <script src="js/playersObject.js"></script>
+    <script src="js/trapsObject.js"></script>
     <script src="js/insertAndMovePlayer.js"></script>
+    <script src="js/movePlayerAndRollDice.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

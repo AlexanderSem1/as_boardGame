@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'GameOfThrones';
+    src: url(fonts/Game-of-thrones.ttf);
+}
+
+
+
 body{
     box-sizing: border-box;
     background-color: $bg-black; 
@@ -12,13 +19,15 @@ body{
 .title{
     margin: 4% ;
     text-align: center;
-    & img{
-        width: 500px;
+    &__header{
+        font-family: 'GameOfThrones';
+        font-size: 3em;
     }
-    &__logo{
-        margin-bottom: 5px;
-        
-    }
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .selectedPlayers{
@@ -62,6 +71,9 @@ body{
     justify-content: center;
     margin-bottom: 10%;
     &__container{
+                img{
+                max-height: 220px;
+                }
         padding: 0px;
         text-align: center;
         &--read{

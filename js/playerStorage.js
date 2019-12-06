@@ -6,11 +6,6 @@ function localStoragePlayers(name) {
         <p>${name}</p>
         <img src="https://via.placeholder.com/150">
         `
-        // document.getElementById('selectedPlayers').innerHTML += `
-        // <div>
-        //     <button class="[ selectedPlayers__reset ]" onclick="resetPlayerSelection()" >Reset Player Selection</button>
-        // </div>
-        // `
        
     } else {
         localStorage.setItem('playerTwo', name)
@@ -25,15 +20,9 @@ function localStoragePlayers(name) {
 
 }
 
-
-
-
-
-
 function resetPlayerSelection() {
-   
     localStorage.clear();
-    document.getElementById('hmmmmm').innerHTML = ''
+    document.getElementById('clearStorage').innerHTML = ''; 
 }
 
 

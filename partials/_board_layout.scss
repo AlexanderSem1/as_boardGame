@@ -21,6 +21,8 @@
     }
 }
 
+
+
 .boardgame{
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
@@ -37,14 +39,10 @@
         }
     }
 }
-#tile0{
-    width: 100%;
-    display: none;
-}
 
 
 
-
+//To be removed 
 a{
     text-decoration: none;
     padding: 40px 0 20px 0;
@@ -52,34 +50,31 @@ a{
     font-size: 1.1vw;
 }
 
-// #dice{
-//     // padding: 10px; 
-//     font-size: 1.5vw; 
-//     min-height: 80px;
-//     border:
-//     2px solid $bg-white;
-// }
 
 .fa-arrow-left{
     font-family: GameOfThrones;
 }
 
+//Which player turn inital position at tile 0 
+
 #turnsPlayer1, #turnsPlayer2{
     display: none;
 }
-
-.modal-header, .modal-body, .modal-footer{
-    border-bottom: 1px solid $bg-yellow;
-    border-top: 1px solid $bg-yellow;
-    text-align: center;
+#tile0{
+    display: none;
 }
 
-.modal-content{
-    background-color: $bg-yellow;
-    align-content: center;
+//Modal styling 
+
+.modal{
+    &-content{
+        background-color: $bg-yellow;
+        align-content: center;
+    }
+    &-header, &-body, &-footer{
+        border-bottom: 1px solid $bg-yellow;
+        border-top: 1px solid $bg-yellow;
+    }
 }
 
-.modal-header{
-    align-content: center;
-    text-align: center;
-}
+
