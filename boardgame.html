@@ -138,7 +138,7 @@
         <div class=" [ modal-dialog modal-dialog-centered ] " role="document">
             <div class=" [ modal-content ] ">
                 <div class=" [ modal-header ] ">
-                    <h5 class=" [ modal-title ] " id="ModalLongTitle">You are lucky!</h5>
+                    <h5 class=" [ modal-title ] " id="ModalLongTitle"> <span ${whichPlayersTurn.name}></span> You are lucky!</h5>
                     <button type="button" class="[ close ] " data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -153,11 +153,17 @@
         </div>
     </div>
 
+
     <!-- Modal BoardGame Extra Dice Roll -->
-    <div class=" [ modal fade ] " id="trapModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
-        aria-hidden="true">
+    <div class=" [ modal fade ] " id="trapModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
         <div class=" [ modal-dialog modal-dialog-centered ] " role="document">
-            <div class=" [ modal-content ] ">
+            <div class=" [ modal-content red ] ">
+                <div class=" [ modal-header ] ">
+                    <h5 class=" [ modal-title ] " id="ModalLongTitle"> Ouch <span ${whichPlayersTurn.name}></span> - You hit a trap!</h5>
+                    <button type="button" class="[ close ] " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <div class=" [ modal-body ] " id="trapModalMessage"></div>
                 <div class="[ modal-footer ]">
                     <button type="button" class=" [ btn btn-secondary ]" data-dismiss="modal">Close</button>
@@ -167,21 +173,14 @@
     </div>
 
 
-
     <a class=" [ fas fa-arrow-left ] " href="index.html">&nbsp;&nbsp; Back to Home</a>
 
     <script src="js/playersObject.js"></script>
     <script src="js/trapsObject.js"></script>
     <script src="js/insertAndMovePlayer.js"></script>
     <script src="js/movePlayerAndRollDice.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

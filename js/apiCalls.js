@@ -7,9 +7,6 @@ function viewMore(id, character) {
     })
     .then(function (result) {
         let playerInfo = result;
-        console.log(playerInfo)
-        let updateAlias = playerInfo.aliases[0];
-        console.log(updateAlias)
 
         if (playerInfo.aliases[0] === '') {
             document.getElementById('player_' + character).innerHTML += `

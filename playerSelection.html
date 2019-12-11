@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Thrones - Board Game</title>
+    <script src="https://kit.fontawesome.com/da3204a637.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class=" [ title ] ">
+        <h1 class=" [ title__header ] ">Game of Titans</h1>
+    </div>
+
+    <div class=" [ selections ] " id="bordgameIntroText">
+        <p class=" [ selections__text ] ">You can choose between 10 differnt warriors. Start by choosing warrior one followed by warrior two. Good Luck and don't screw it!!!!</p>
+
+    </div>
+
+    <div class=" [ selectedPlayers ] " id="clearStorage">
+        <div id="selectedPlayer1"></div>
+        <div id="selectedPlayer2"></div>        
+    </div>
+    
+    <div class=" [ players ] ">
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Jon.svg" class=" [ male ] " alt="Jon Snow">
+            <p>Jon Snow</p>
+            <div id="player_Jon"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('583', 'Jon')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Jon')">Select Jon</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Daenerys.svg" alt="Daenerys Targaryen">
+            <p>Daenerys Targaryen</p>
+            <div id="player_Daenerys"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('272', 'Daenerys')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Daenerys')">Select Daenerys</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Sansa.svg" alt="Sansa Stark">
+            <p>Sansa Stark</p>
+            <div id="player_Sansa"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('957', 'Sansa')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Sansa')">Select Sansa</button>
+        </div>
+        <div class=" [ players__container ] " id="swapPictureTyrionToMini">
+            <img onmouseover="swapPictureTyrionToMini()" src="images/SVG/Tyrion.svg" alt="Tyrion Lannister">
+            <p>Tyrion "Mini" Lannister</p>
+            <div id="player_Tyrion"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('1052', 'Tyrion')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Tyrion')">Select Tyrion</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Stannis.svg" alt="Stannis Baratheon">
+            <p>Stannis Baratheon</p>
+            <div id="player_Stannis"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('1963', 'Stannis')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Stannis')">Select Stannis</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Joffrey.svg" alt="Joffrey Baratheon">
+            <p>Joffrey Baratheon</p>
+            <div id="player_Joffrey"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('565', 'Joffrey')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Joffrey')">Select Joffrey</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Petyr.svg" alt="Petyr - Littlefinger - Baelish">
+            <p>Petyr "Littlefinger" Baelish</p>
+            <div id="player_Petyr"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('823', 'Petyr')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Petyr')">Select Petyr</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Cersei.svg" alt="Cersei Lannister">
+            <p>Cersei Lannister</p>
+            <div id="player_Cersei"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('238', 'Cersei')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Cersei')">Select Cersei</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Theon.svg" alt="Theon Greyjoy">
+            <p>Theon Greyjoy</p>
+            <div id="player_Theon"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('1022', 'Theon')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Theon')">Select Theon</button>
+        </div>
+        <div class=" [ players__container ] ">
+            <img src="images/SVG/Margaery.svg" alt="Margaery Tyrell">
+            <p>Margaery Tyrell</p>
+            <div id="player_Margaery"></div>
+            <button class="[ players__container--read ]" onclick="viewMore('16', 'Margaery')">Read More</button>
+            <button class="[ players__container--read ]" onclick="localStoragePlayers('Margaery')">Select Margaery</button>
+        </div>
+
+    </div>
+
+    
+
+    <script src="/js/apiCalls.js"></script>
+    <script src="js/playerStorage.js"></script>
+    <script src="js/introPage.js"></script>
+</body>
+</html>
