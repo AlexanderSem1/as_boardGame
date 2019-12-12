@@ -34,7 +34,6 @@ body{
 #clearStorage{
     grid-column: 1/2;
     grid-row: 1;
-    // position: relative;
 }
 
 .selectedPlayers{
@@ -44,10 +43,8 @@ body{
     text-align: center;
     margin-bottom: 100px;
     justify-content: center; 
-    // animation: slidein 2s forwards;
     &__reset{
         padding: 8px 10px;
-        // background: linear-gradient(115deg, #BA0 0%, #980 45%, #a90 45%, #FFEE00 100%);
         background-color: $bgyellow;
         border: 2px solid $bgyellow; 
         font-size: 100% ;
@@ -57,14 +54,12 @@ body{
         color: $bgblack;
         margin-bottom: 10px;
         border-radius: 2px;
-        // box-shadow: 0 5px 20px rgba(0,0,0, 0.6);
     }
 }
 
 #selectedPlayer1{
     grid-column: 1/2;
     grid-row: 1;
-    // animation: slidein 2s forwards;
     justify-content: center;
     img {
         max-height: 200px;
@@ -74,13 +69,10 @@ body{
 #selectedPlayer2{
     grid-column: 2/3;
     grid-row: 1;
-
-    // animation: slidein 2s forwards;
     img {
         max-height: 200px;
     }
 }
-
 
 
 .players{
@@ -105,8 +97,6 @@ body{
             }
             &--read{
             padding: 8px 20px;
-            // background: linear-gradient(135deg, #BA0 0%, #a90 35%, #FFEE00 100%);
-            // background: linear-gradient(115deg, #BA0 0%, #980 45%, #a90 45%, #FFEE00 100%);
             background-color: $bgyellow;
             border: 2px solid $bgyellow; 
             font-size: 100% ;

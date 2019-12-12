@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,17 @@
     <link rel="stylesheet" href="styles.css">
     <title>Winner page</title>
 </head>
+
 <body class=" [ backgroundWinner ] ">
     <div class=" [ winner ] ">
         <h1 class=" [ winner__header ] ">Congrats</h1>
-        <h2 class=" [ winner__header ] ">You have defeated the evil night walkers!!!</h2>
-        <button class=" [ players__container--read winner__header--btn ] " onclick="backtoIntroPage()">PLAY AGAIN</button>
+        <h2 class=" [ winner__header ] "><span id="winnerPlayer">you have defeated the evil night walkers!!!</span></h2>
+        <button class=" [ players__container--read winner__header--btn ] " onclick="backtoIntroPage()">PLAY
+            AGAIN</button>
     </div>
 
     <script src="js/introPage.js"></script>
+    <script src="js/movePlayerAndRollDice.js"></script>
 </body>
+
 </html>
