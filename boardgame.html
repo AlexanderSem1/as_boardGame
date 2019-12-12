@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class=" [ title ] ">
-        <h1 class=" [ title__header ] ">Game of The Titans - Board Game</h1>
+        <h1 class=" [ title__header ] ">Game of The<span id="titans" onmouseover="swapTitansToMinis()">Titans</span></h1>
         <!-- <img class=" [ title__logo ] " src="images/game-of-thrones.png" alt="" width="200px"> -->
         <!-- <h1>Welcome to Game of Thrones - Board Game</h1>
         <h1>Choose your players</h1> -->
@@ -20,21 +20,16 @@
 
 
     <div class=" [ bgplayers ] ">
-        <div class=" [ bgplayers__board ] " id="selectedPlayer1">
-            <div class=" [ bgplayers__truns ] " id="turnsPlayer1">Your Turn!</div>
-        </div>
+        <div class=" [ bgplayers__board ] " id="selectedPlayer1"></div>
        
         <div class=" [ bgplayers__board ] " >
+            <img src="images/dices.svg" alt="Boardgame dices"><br>
             <button class=" [ bgplayers__board--btn ] " onclick="movePlayerAndRollDice()" >Roll the dice</button>
             <p id="dice"></p>
         </div>
-        <div class=" [ bgplayers__board ] " id="selectedPlayer2">
-            <!-- <div class=" [ bgplayers__truns ] " id="turnsPlayer2">Your Turn!</div> -->
-        </div>
+        <div class=" [ bgplayers__board ] " id="selectedPlayer2"></div>
         </div>
     </div>
-
-    <div ></div>
 
     <div class=" [ boardgame ] ">
         <div class=" [ boardgame__tile ] ">
@@ -49,7 +44,7 @@
         <div class=" [ boardgame__tile ] ">
             <p class=" [ boardgame__tile--number ] " id="tile4">4</p>
         </div>
-        <div class=" [ boardgame__tile ] ">
+        <div class=" [ boardgame__tile trapStyle ] ">
             <p class=" [ boardgame__tile--number ] " id="tile5">5</p>
         </div>
         <div class=" [ boardgame__tile ] ">
@@ -58,7 +53,7 @@
         <div class=" [ boardgame__tile ] ">
             <p class=" [ boardgame__tile--number ] " id="tile7">7</p>
         </div>
-        <div class=" [ boardgame__tile ] ">
+        <div class=" [ boardgame__tile trapStyle ] ">
             <p class=" [ boardgame__tile--number ] " id="tile8">8</p>
         </div>
         <div class=" [ boardgame__tile ] ">
@@ -88,7 +83,7 @@
         <div class=" [ boardgame__tile ] ">
             <p class=" [ boardgame__tile--number ] " id="tile17">17</p>
         </div>
-        <div class=" [ boardgame__tile ] ">
+        <div class=" [ boardgame__tile trapStyle ] ">
             <p class=" [ boardgame__tile--number ] " id="tile18">18</p>
         </div>
         <div class=" [ boardgame__tile ] ">
@@ -106,7 +101,7 @@
         <div class=" [ boardgame__tile ] ">
             <p class=" [ boardgame__tile--number ] " id="tile23">23</p>
         </div>
-        <div class=" [ boardgame__tile ] ">
+        <div class=" [ boardgame__tile trapStyle ] ">
             <p class=" [ boardgame__tile--number ] " id="tile24">24</p>
         </div>
         <div class=" [ boardgame__tile ] ">
@@ -118,7 +113,7 @@
         <div class=" [ boardgame__tile ] ">
             <p class=" [ boardgame__tile--number ] " id="tile27">27</p>
         </div>
-        <div class=" [ boardgame__tile ] ">
+        <div class=" [ boardgame__tile trapStyle ] ">
             <p class=" [ boardgame__tile--number ] " id="tile28">28</p>
         </div>
         <div class=" [ boardgame__tile ] ">
@@ -129,6 +124,101 @@
         </div>
     </div>
 
+<!--     
+
+    <div class=" [ boardgame ] ">
+        <div class=" [ boardgame__tile ] " id="tile1">
+            <p class=" [ boardgame__tile--number ] " >1</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile2">
+            <p class=" [ boardgame__tile--number ] " >2</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile3">
+            <p class=" [ boardgame__tile--number ] " >3</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile4">
+            <p class=" [ boardgame__tile--number ] " >4</p>
+        </div>
+        <div class=" [ boardgame__tile trapStyle ] " id="tile5">
+            <p class=" [ boardgame__tile--number ] ">5</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile6">
+            <p class=" [ boardgame__tile--number ] ">6</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile7">
+            <p class=" [ boardgame__tile--number ] ">7</p>
+        </div>
+        <div class=" [ boardgame__tile trapStyle ] " id="tile8">
+            <p class=" [ boardgame__tile--number ] ">8</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile9">
+            <p class=" [ boardgame__tile--number ] ">9</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile10">
+            <p class=" [ boardgame__tile--number ] ">10</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile11">
+            <p class=" [ boardgame__tile--number ] ">11</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile12">
+            <p class=" [ boardgame__tile--number ] ">12</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile13">
+            <p class=" [ boardgame__tile--number ] ">13</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile14">
+            <p class=" [ boardgame__tile--number ] ">14</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile15">
+            <p class=" [ boardgame__tile--number ] ">15</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile16">
+            <p class=" [ boardgame__tile--number ] ">16</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile17">
+            <p class=" [ boardgame__tile--number ] ">17</p>
+        </div>
+        <div class=" [ boardgame__tile trapStyle ] " id="tile18">
+            <p class=" [ boardgame__tile--number ] ">18</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile19">
+            <p class=" [ boardgame__tile--number ] ">19</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile20">
+            <p class=" [ boardgame__tile--number ] ">20</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile21">
+            <p class=" [ boardgame__tile--number ] ">21</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile22">
+            <p class=" [ boardgame__tile--number ] ">22</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile23">
+            <p class=" [ boardgame__tile--number ] ">23</p>
+        </div>
+        <div class=" [ boardgame__tile trapStyle ] " id="tile24">
+            <p class=" [ boardgame__tile--number ] ">24</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile25">
+            <p class=" [ boardgame__tile--number ] ">25</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile26">
+            <p class=" [ boardgame__tile--number ] ">26</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile27">
+            <p class=" [ boardgame__tile--number ] ">27</p>
+        </div>
+        <div class=" [ boardgame__tile trapStyle ] " id="tile28">
+            <p class=" [ boardgame__tile--number ] ">28</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile29">
+            <p class=" [ boardgame__tile--number ] ">29</p>
+        </div>
+        <div class=" [ boardgame__tile ] " id="tile30">
+            <p class=" [ boardgame__tile--number ] ">30</p>
+        </div>
+    </div> -->
+
     <!-- Hidden Div to put the staring posiion of the tiles -->
     <div><p id="tile0">0</p></div>
 
@@ -138,7 +228,7 @@
         <div class=" [ modal-dialog modal-dialog-centered ] " role="document">
             <div class=" [ modal-content ] ">
                 <div class=" [ modal-header ] ">
-                    <h5 class=" [ modal-title ] " id="ModalLongTitle"> <span ${whichPlayersTurn.name}></span> You are lucky!</h5>
+                    <h5 class=" [ modal-title ] " id="ModalLongTitle"> <span id="playerTurnAgainName"></span> You are lucky!</h5>
                     <button type="button" class="[ close ] " data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -155,11 +245,12 @@
 
 
     <!-- Modal BoardGame Extra Dice Roll -->
+
     <div class=" [ modal fade ] " id="trapModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
         <div class=" [ modal-dialog modal-dialog-centered ] " role="document">
             <div class=" [ modal-content red ] ">
                 <div class=" [ modal-header ] ">
-                    <h5 class=" [ modal-title ] " id="ModalLongTitle"> Ouch <span ${whichPlayersTurn.name}></span> - You hit a trap!</h5>
+                    <h5 class=" [ modal-title ] " id="ModalLongTitle"> Ouch <span id="playersTurnTrap"></span> - You hit a trap!</h5>
                     <button type="button" class="[ close ] " data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -172,13 +263,11 @@
         </div>
     </div>
 
-
-    <a class=" [ fas fa-arrow-left ] " href="index.html">&nbsp;&nbsp; Back to Home</a>
-
     <script src="js/playersObject.js"></script>
     <script src="js/trapsObject.js"></script>
     <script src="js/insertAndMovePlayer.js"></script>
     <script src="js/movePlayerAndRollDice.js"></script>
+    <script src="js/introPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

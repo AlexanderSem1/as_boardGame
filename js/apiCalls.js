@@ -1,5 +1,4 @@
 function viewMore(id, character) {
-
     document.getElementById('player_' + character).innerHTML = '';
     fetch('https://anapioficeandfire.com/api/characters/' + id)
     .then(function (response) {

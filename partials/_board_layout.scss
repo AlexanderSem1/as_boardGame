@@ -4,26 +4,34 @@
     width: 100%;
     text-align: center;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50px;
     &__board{
         &--btn{
         padding: 8px 20px;
-        // background: linear-gradient(115deg, #BA0 0%, #980 45%, #a90 45%, #FFEE00 100%);
         background-color: $bgyellow;
         border: 2px solid $bgyellow; 
         font-size: 1.1vw ;
         max-width: 250px;
         max-height: 45px;
-        color: $bgwhite;
-        margin: 30px 0 50px 0;
+        color: $bgblack;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 0 50px 0;
         border-radius: 2px;
+        }
+        &--playerPosition{
+            min-width: 50px;
+            max-width: 50px;
+            border: 2px solid $bgwhite;
+            padding: 10px;
+            margin: 10px 45% 0;
         }
     } img{
         width: 100px;
+        height: 120px;
+        margin-top: 10px;
     }
 }
-
-
 
 .boardgame{
     display: grid;
@@ -33,38 +41,18 @@
     &__tile{
         padding: 10px 5px;
         border: 3px solid $bgwhite;
+        min-height: 100px;
+        max-height: 100px;
         &--number{
             font-size: 1.2vw;
-            min-height: 100px;
-            max-height: 100px;
+            margin-bottom: -1rem;
         } img{
-            width: 60px;
-            padding: 10px;
-            margin-left: 40px;
+            width: 30px;
+            margin-left: 30px;
         }
     }
 }
 
-
-
-//To be removed 
-a{
-    text-decoration: none;
-    padding: 40px 0 20px 0;
-    color: $bgwhite;
-    font-size: 1.1vw;
-}
-
-
-.fa-arrow-left{
-    font-family: GameOfThrones;
-}
-
-//Which player turn inital position at tile 0 
-
-#turnsPlayer1, #turnsPlayer2{
-    display: none;
-}
 #tile0{
     display: none;
 }
@@ -87,9 +75,12 @@ a{
 }
 
 #trapModal .red{
-    background: linear-gradient(to left top, #e13d0f, #e1350f, #e12c0e, #e1200f, #e10f0f);  
+    background: $bgblood;  
     font-size: 1.2vw; 
     color: $bgwhite;
 }
 
+.boardgame .trapStyle{
+    background-color: $bgblood; 
+}
 

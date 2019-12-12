@@ -1,204 +1,3 @@
-@font-face {
-  font-family: "GameOfThrones";
-  src: url(fonts/Game-of-thrones.ttf);
-}
-body {
-  box-sizing: border-box;
-  background-color: #222222;
-  color: #f0f0f0;
-  height: 100vw;
-  font-family: "MedievalSharp", cursive;
-  margin: 0 10%;
-  scroll-behavior: smooth;
-  overscroll-behavior-y: contain;
-}
-
-.title {
-  margin: 4%;
-  text-align: center;
-}
-.title__header {
-  font-family: "GameOfThrones";
-  font-size: 3em;
-}
-
-.selections {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#clearStorage {
-  grid-column: 1/2;
-  grid-row: 1;
-}
-
-.selectedPlayers {
-  transition: 5s;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
-  margin-bottom: 100px;
-  justify-content: center;
-}
-.selectedPlayers__reset {
-  padding: 8px 10px;
-  background-color: #8E793E;
-  border: 2px solid #8E793E;
-  font-size: 100%;
-  max-width: 200px;
-  min-width: 200px;
-  margin: 0 30%;
-  color: #f0f0f0;
-  margin-bottom: 10px;
-  border-radius: 2px;
-}
-
-#selectedPlayer1 {
-  grid-column: 1/2;
-  grid-row: 1;
-  justify-content: center;
-}
-#selectedPlayer1 img {
-  max-height: 200px;
-}
-
-#selectedPlayer2 {
-  grid-column: 2/3;
-  grid-row: 1;
-}
-#selectedPlayer2 img {
-  max-height: 200px;
-}
-
-.players {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 40px;
-  grid-row-gap: 100px;
-  justify-content: center;
-  margin-bottom: 10%;
-}
-.players__container {
-  padding: 0px;
-  text-align: center;
-}
-.players__container img {
-  max-height: 200px;
-}
-.players__container button:hover {
-  cursor: pointer;
-  background-color: #540300;
-  border: 2px solid #540300;
-  color: #f0f0f0;
-  font-weight: bold;
-}
-.players__container--read {
-  padding: 8px 20px;
-  background-color: #8E793E;
-  border: 2px solid #8E793E;
-  font-size: 100%;
-  min-width: 180px;
-  max-width: 180px;
-  color: #222222;
-  margin-bottom: 10px;
-  border-radius: 2px;
-}
-
-@keyframes slidein {
-  from {
-    height: 0px;
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    height: var(--h);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes appear {}
-.bgplayers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.bgplayers__board--btn {
-  padding: 8px 20px;
-  background-color: #8E793E;
-  border: 2px solid #8E793E;
-  font-size: 1.1vw;
-  max-width: 250px;
-  max-height: 45px;
-  color: #f0f0f0;
-  margin: 30px 0 50px 0;
-  border-radius: 2px;
-}
-.bgplayers img {
-  width: 100px;
-}
-
-.boardgame {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 0px;
-  border: 3px solid #f0f0f0;
-}
-.boardgame__tile {
-  padding: 10px 5px;
-  border: 3px solid #f0f0f0;
-}
-.boardgame__tile--number {
-  font-size: 1.2vw;
-  min-height: 100px;
-  max-height: 100px;
-}
-.boardgame__tile img {
-  width: 60px;
-  padding: 10px;
-  margin-left: 40px;
-}
-
-a {
-  text-decoration: none;
-  padding: 40px 0 20px 0;
-  color: #f0f0f0;
-  font-size: 1.1vw;
-}
-
-.fa-arrow-left {
-  font-family: GameOfThrones;
-}
-
-#turnsPlayer1, #turnsPlayer2 {
-  display: none;
-}
-
-#tile0 {
-  display: none;
-}
-
-.modal-content {
-  background: linear-gradient(115deg, #BA0 0%, #980 45%, #a90 45%, #FFEE00 100%);
-  color: #222222;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2vw;
-  padding: 20px;
-  align-content: center;
-}
-.modal-header, .modal-body, .modal-footer {
-  border-bottom: 0px solid #8E793E;
-  border-top: 0px solid #8E793E;
-}
-
-#trapModal .red {
-  background: linear-gradient(to left top, #e13d0f, #e1350f, #e12c0e, #e1200f, #e10f0f);
-  font-size: 1.2vw;
-  color: #f0f0f0;
-}
-
 .homeTitle {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -255,6 +54,206 @@ a {
   margin-left: 350px;
 }
 
+.bgplayers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+.bgplayers__board--btn {
+  padding: 8px 20px;
+  background-color: #F9DB09;
+  border: 2px solid #F9DB09;
+  font-size: 1.1vw;
+  max-width: 250px;
+  max-height: 45px;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0 50px 0;
+  border-radius: 2px;
+}
+.bgplayers__board--playerPosition {
+  min-width: 50px;
+  max-width: 50px;
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  margin: 10px 45% 0;
+}
+.bgplayers img {
+  width: 100px;
+  height: 120px;
+  margin-top: 10px;
+}
+
+.boardgame {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0px;
+  border: 3px solid #f0f0f0;
+}
+.boardgame__tile {
+  padding: 10px 5px;
+  border: 3px solid #f0f0f0;
+  min-height: 100px;
+  max-height: 100px;
+}
+.boardgame__tile--number {
+  font-size: 1.2vw;
+  margin-bottom: -1rem;
+}
+.boardgame__tile img {
+  width: 30px;
+  margin-left: 30px;
+}
+
+#tile0 {
+  display: none;
+}
+
+.modal-content {
+  background: linear-gradient(115deg, #BA0 0%, #980 45%, #a90 45%, #FFEE00 100%);
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  padding: 20px;
+  align-content: center;
+}
+.modal-header, .modal-body, .modal-footer {
+  border-bottom: 0px solid #F9DB09;
+  border-top: 0px solid #F9DB09;
+}
+
+#trapModal .red {
+  background: #540300;
+  font-size: 1.2vw;
+  color: #f0f0f0;
+}
+
+.boardgame .trapStyle {
+  background-color: #540300;
+}
+
+@font-face {
+  font-family: "GameOfThrones";
+  src: url(fonts/Game-of-thrones.ttf);
+}
+body {
+  box-sizing: border-box;
+  background-color: #222222;
+  color: #f0f0f0;
+  font-family: "MedievalSharp", cursive;
+  margin: 0 10%;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+}
+
+.title {
+  margin: 4%;
+  text-align: center;
+}
+.title__header {
+  font-family: "GameOfThrones";
+  font-size: 3em;
+}
+
+.selections {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#clearStorage {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.selectedPlayers {
+  transition: 5s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.selectedPlayers__reset {
+  padding: 8px 10px;
+  background-color: #F9DB09;
+  border: 2px solid #F9DB09;
+  font-size: 100%;
+  max-width: 200px;
+  min-width: 200px;
+  margin: 0 30%;
+  color: #222222;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+#selectedPlayer1 {
+  grid-column: 1/2;
+  grid-row: 1;
+  justify-content: center;
+}
+#selectedPlayer1 img {
+  max-height: 200px;
+}
+
+#selectedPlayer2 {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+#selectedPlayer2 img {
+  max-height: 200px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+  grid-row-gap: 100px;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.players__container {
+  padding: 0px;
+  text-align: center;
+}
+.players__container img {
+  max-height: 200px;
+}
+.players__container button:hover {
+  cursor: pointer;
+  background-color: #540300;
+  border: 2px solid #540300;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+.players__container--read {
+  padding: 8px 20px;
+  background-color: #F9DB09;
+  border: 2px solid #F9DB09;
+  font-size: 100%;
+  min-width: 180px;
+  max-width: 180px;
+  color: #222222;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+@keyframes slidein {
+  from {
+    height: 0px;
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    height: var(--h);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes appear {}
 .backgroundWinner {
   background-image: url("images/winners.jpg");
   background-size: cover;
