@@ -7,13 +7,25 @@
 
 
 .winner{
-    margin: 25%;
+    margin: 15%;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 2vw;
+    button:hover{
+            cursor: pointer;
+            background-color: $bgblood; 
+            border: 2px solid $bgblood; 
+            color: $bgwhite;
+            font-weight: bold;
+        }
     &__header{
+          
         text-align: center;
+
         &--btn{
-            font-size: 1.5vw;
+            font-size: 3vw;
+            min-width: 500px;
+
         }
     }
 }

@@ -22,7 +22,7 @@ body{
     text-align: center;
     &__header{
         font-family: 'GameOfThrones';
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 
@@ -69,6 +69,13 @@ body{
 #selectedPlayer2{
     grid-column: 2/3;
     grid-row: 1;
+    button:hover{
+        cursor: pointer;
+        background-color: $bgblood; 
+        border: 2px solid $bgblood; 
+        color: $bgwhite;
+        font-weight: bold;
+    }
     img {
         max-height: 200px;
     }

@@ -3,8 +3,10 @@ function introPage() {
 }
 
 function swapTitansToMinis() {
-    document.getElementById('titans').innerHTML = "Minis";
-    document.getElementById('titans2').innerHTML = "Minis-";
+    document.getElementById('titans').innerHTML = " Minis";
+    document.getElementById('titans').style.color = 'red';
+    document.getElementById('titans2').innerHTML = " Minis-";
+    document.getElementById('titans2').style.color = 'red';
 }
 
 function swapPictureTyrionToMini() {
@@ -20,3 +22,10 @@ function swapPictureTyrionToMini() {
 function backtoIntroPage() {
     location.replace('index.html');
 }
+
+function winnerPageMessage() {
+    window.location.replace('winnerpage.html')
+}
+
+
+

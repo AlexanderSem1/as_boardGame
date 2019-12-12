@@ -1,5 +1,5 @@
 .homeTitle{
-    margin-top: 100px;
+    margin-top: 10% !important; 
     margin-bottom: 100px;
     font-size: 2vw;
 }
@@ -13,6 +13,7 @@
         button{
             font-size: 200%;
             min-width: 350px;
+            margin-top: 2%;
         }
         button:hover{
                 cursor: all-scroll;  
@@ -31,25 +32,17 @@
 
 .backgroundHomePage{
     background-color: $bgblack; 
-    background-image: url('images/background_80.svg');
+    background-image: url('images/indexbackground.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
 }
 
 .footer{
     font-family: Arial, Helvetica, sans-serif !important;
     bottom: 0;
-    left: 20px;
-    position: absolute;
+    left: 40px;
+    position: fixed;
     font-size: 70%;
-    font-size: 70%;
-    color: $bggrey; 
-    display: grid;
-     grid-template-columns: repeat(2, 1fr); 
-    &__copyRight{
-       justify-content: left;
-    }
-    &__designedBy{
-        margin-left: 350px;
-    }
+    color: $bggrey;  
+    justify-content: left;    
 }

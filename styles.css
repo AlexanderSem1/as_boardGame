@@ -1,5 +1,5 @@
 .homeTitle {
-  margin-top: 100px;
+  margin-top: 10% !important;
   margin-bottom: 100px;
   font-size: 2vw;
 }
@@ -15,6 +15,7 @@
 .intro__info button {
   font-size: 200%;
   min-width: 350px;
+  margin-top: 2%;
 }
 .intro__info button:hover {
   cursor: all-scroll;
@@ -31,27 +32,19 @@
 
 .backgroundHomePage {
   background-color: #222222;
-  background-image: url("images/background_80.svg");
+  background-image: url("images/indexbackground.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
 }
 
 .footer {
   font-family: Arial, Helvetica, sans-serif !important;
   bottom: 0;
-  left: 20px;
-  position: absolute;
+  left: 40px;
+  position: fixed;
   font-size: 70%;
-  font-size: 70%;
-  color: #4d4d4d;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.footer__copyRight {
+  color: #7d7d7d;
   justify-content: left;
-}
-.footer__designedBy {
-  margin-left: 350px;
 }
 
 .bgplayers {
@@ -62,6 +55,13 @@
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 50px;
+}
+.bgplayers__board button:hover {
+  cursor: pointer;
+  background-color: #540300;
+  border: 2px solid #540300;
+  color: #f0f0f0;
+  font-weight: bold;
 }
 .bgplayers__board--btn {
   padding: 8px 20px;
@@ -132,6 +132,21 @@
   color: #f0f0f0;
 }
 
+#winnerModal .modal-dialog {
+  max-width: 1000px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#winnerModal {
+  color: #F9DB09;
+  background-image: url("images/winners.jpg");
+  background-size: cover;
+  background-color: #222222;
+  background-repeat: no-repeat;
+  font-size: 300%;
+}
+
 .boardgame .trapStyle {
   background-color: #540300;
 }
@@ -156,7 +171,7 @@ body {
 }
 .title__header {
   font-family: "GameOfThrones";
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .selections {
@@ -202,6 +217,13 @@ body {
 #selectedPlayer2 {
   grid-column: 2/3;
   grid-row: 1;
+}
+#selectedPlayer2 button:hover {
+  cursor: pointer;
+  background-color: #540300;
+  border: 2px solid #540300;
+  color: #f0f0f0;
+  font-weight: bold;
 }
 #selectedPlayer2 img {
   max-height: 200px;
@@ -262,15 +284,24 @@ body {
 }
 
 .winner {
-  margin: 25%;
+  margin: 15%;
   padding-bottom: 10px;
   text-align: center;
+  font-size: 2vw;
+}
+.winner button:hover {
+  cursor: pointer;
+  background-color: #540300;
+  border: 2px solid #540300;
+  color: #f0f0f0;
+  font-weight: bold;
 }
 .winner__header {
   text-align: center;
 }
 .winner__header--btn {
-  font-size: 1.5vw;
+  font-size: 3vw;
+  min-width: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */
